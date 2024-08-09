@@ -1,0 +1,95 @@
+.header{
+    grid-area: header;
+    background-color:#E6E6FA;
+    border-radius: 5px;
+    color: #7B68EE;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 20px 0px 7px white;
+
+
+}
+.main{
+    grid-area: main;
+    background-color: #DDA0DD;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    box-shadow: violet;
+    width: 1100px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #8A2BE2;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Orientación vertical */
+    width: 270px; /* Ancho del sidebar */
+    padding: 10px;
+    
+}
+.product {
+    margin-bottom: 15px; /* Espacio entre productos */
+    padding: 10px;
+    background-color: #DDA0DD;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 10px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: grey;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-auto-columns: 1fr 3fr;
+    grid-template-areas: 
+    'header header'
+    'sidebar main'
+    'footer footer'
+    ;
+   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+.card img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.btncomprar {
+    background-color:#4B0082;
+    color:white;
+    width: 100%;
+    border: 0;
+    padding: 0.5rem;
+}
+.footer{
+    color: #4B0082;
+    background-color: #E6E6FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
